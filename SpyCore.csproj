@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SpyCore</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <StartupObject>SpyCore.App</StartupObject>
+    <UseWindowsForms>True</UseWindowsForms>
+    <Description>Multi-Sourced file scanner, using various different online resources for classification - such as VirusTotal and Intezer-Protect</Description>
+    <Copyright>7DBC</Copyright>
+    <Authors>blackrabb17</Authors>
+    <Company>7heDeadBunnyCollective</Company>
+    <Product>SpyCore File Scanner</Product>
+    <ApplicationIcon>bug.ico</ApplicationIcon>
+    <Win32Resource />
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Views\CommunityPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\2699641-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Views\CommunityPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.NetCore" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.WinForms.NetCore3" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf.Core" Version="0.9.8" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.16" />
+    <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.2" />
+    <PackageReference Include="telerik.ui.for.wpf.netcore.xaml" Version="2021.2.511" />
+    <PackageReference Include="VirusTotalNet" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpyCore.Core\SpyCore.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\2699641-200.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

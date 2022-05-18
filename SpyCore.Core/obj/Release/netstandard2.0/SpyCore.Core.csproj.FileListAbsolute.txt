@@ -1,0 +1,10 @@
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.deps.json
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.dll
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.pdb
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.AssemblyInfoInputs.cache
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.AssemblyInfo.cs
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.csproj.CoreCompileInputs.cache
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.dll
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.pdb
+E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.csproj.AssemblyReference.cache

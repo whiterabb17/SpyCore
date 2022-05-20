@@ -57,8 +57,8 @@
                 <Label Content="MD5:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Margin="0,61,0,0" Grid.RowSpan="2"/>
                 <Label Content="SHA1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Height="32" Width="76" Grid.Row="2"/>
                 <Label Content="SHA256:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Height="32" Width="76" Grid.Row="3"/>
-                <Label Content="Size:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Grid.Row="3" Margin="11,26,0,0" Grid.RowSpan="2"/>
-                <TextBox x:Name="fileName_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="26" Margin="0,31,0,0"/>
+                <Label Content="Size:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Grid.Row="3" Margin="11,32,0,0" Grid.RowSpan="2"/>
+                <TextBox x:Name="fileName_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Height="26" Margin="0,32,0,0"/>
                 <TextBox x:Name="MD5_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="1" Height="26"/>
                 <TextBox x:Name="SHA1_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="2" Height="26"/>
                 <TextBox x:Name="SHA256_textbox" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="268" Grid.Row="3" Height="26"/>
@@ -72,18 +72,17 @@
                 <Rectangle HorizontalAlignment="Left" Height="16" Margin="182,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF"/>
                 <Rectangle HorizontalAlignment="Left" Height="16" Margin="249,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF9A9A9A"/>
                 <Label Content="Malicious" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="81" Margin="100,0,0,0"/>
-                <Label Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="40" Margin="205,0,0,0"/>
-                <Label Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="275,1,0,0"/>
+                <Label Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="40" Margin="200,0,0,0"/>
+                <Label Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="268,1,0,0"/>
                 <lvc:PieChart x:Name="pieChart1" Series="{Binding Series}" Margin="76,42,3,-130" />
                 <Label Content="Results" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="-316,197,0,0"/>
             </Grid>
-
-            <lvc:CartesianChart x:Name="chart1" Grid.ColumnSpan="2" Margin="1,49,302,4" Grid.Row="2"/>
-            <Rectangle HorizontalAlignment="Left" Height="16" Margin="272,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="Red" Grid.Row="2"/>
-            <Label Content="Malicious" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="76" Margin="292,1,0,0" Grid.Row="2"/>
-            <Rectangle HorizontalAlignment="Left" Height="16" Margin="272,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF" Grid.Row="2"/>
-            <Label Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="296,25,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
-            <Label Content="Community Graph [Coming Soon]" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="250" Margin="17,7,0,0" Grid.Row="2"/>
+            <Rectangle HorizontalAlignment="Left" Height="16" Margin="59,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="Red" Grid.Row="2"/>
+            <Label x:Name="malPercent" Content="Malicious" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="136" Margin="79,40,0,0" Grid.Row="2"/>
+            <Rectangle HorizontalAlignment="Left" Height="16" Margin="57,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF1601AF" Grid.Row="2"/>
+            <Label x:Name="safePercent" Content="Safe" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="83,82,0,0" Grid.Row="2"/>
+            <Rectangle HorizontalAlignment="Left" Height="16" Margin="58,131,0,0" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="#FF9A9A9A" Grid.Row="2"/>
+            <Label x:Name="unkPercent" Content="Unknown" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="32" Width="130" Margin="84,123,0,0" Grid.Row="2"/>
             <!--
             The Mahapps Gray10 color represents where you should place your content.
             Place your content here.

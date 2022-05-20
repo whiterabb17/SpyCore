@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.csproj": {}
+    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore\\SpyCore.csproj": {}
   },
   "projects": {
-    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj": {
+    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj",
+        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
         "projectName": "SpyCore.Core",
-        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj",
+        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
         "packagesPath": "C:\\Users\\wh7rb7\\.nuget\\packages\\",
-        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\obj\\",
+        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -74,14 +74,14 @@
         }
       }
     },
-    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.csproj": {
+    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore\\SpyCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.csproj",
+        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore\\SpyCore.csproj",
         "projectName": "SpyCore",
-        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.csproj",
+        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore\\SpyCore.csproj",
         "packagesPath": "C:\\Users\\wh7rb7\\.nuget\\packages\\",
-        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\obj\\",
+        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -96,7 +96,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -104,11 +104,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj": {
-                "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj"
+              "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj": {
+                "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj"
               }
             }
           }
@@ -120,8 +120,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
           "dependencies": {
             "LiveCharts.NetCore": {
               "target": "Package",
@@ -142,6 +142,10 @@
             "MahApps.Metro": {
               "target": "Package",
               "version": "[2.4.6, )"
+            },
+            "Maikebing.System.Windows.Forms.DataVisualization": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",

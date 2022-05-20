@@ -146,7 +146,9 @@ namespace SpyCore.Views
                         Fill = System.Windows.Media.Brushes.Gray
                     }
                 };
-
+                malPercent.Content = "Malicious = " + malicious;
+                safePercent.Content = "Safe = " + undetected;
+                unkPercent.Content = "Unknown = " + unknown;
                 pieChart1.Series = piechartData;
                 CommunityVotesChart(scanResults.Data.Attributes.TotalVotes.Harmless, scanResults.Data.Attributes.TotalVotes.Malicious);
             }

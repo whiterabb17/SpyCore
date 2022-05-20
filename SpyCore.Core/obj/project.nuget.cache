@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dtgGP0CIMnZnx37VYqz76naK3WSGbDgd4V4cX7dlIh84MfkSxzBR0BPjdUPkNx9Cl4ZRRrlpz/8Xujdg7m9DQ==",
+  "dgSpecHash": "w6Xw5fw4drRndjqlzi5hLn3HM/DncZLhz8R4QwlC6EkntgrVn1Vzy5vlfvwhvljU4aonL6x0S9atwWbiKd4iOw==",
   "success": true,
-  "projectFilePath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj",
+  "projectFilePath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

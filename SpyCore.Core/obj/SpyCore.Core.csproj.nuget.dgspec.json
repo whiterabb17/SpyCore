@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj": {}
+    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj": {}
   },
   "projects": {
-    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj": {
+    "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj",
+        "projectUniqueName": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
         "projectName": "SpyCore.Core",
-        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\SpyCore.Core.csproj",
+        "projectPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\SpyCore.Core.csproj",
         "packagesPath": "C:\\Users\\wh7rb7\\.nuget\\packages\\",
-        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore.Core\\obj\\",
+        "outputPath": "E:\\DarkOracle\\CWC\\DeepSpy\\SpyCore\\SpyCore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

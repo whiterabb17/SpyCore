@@ -169,7 +169,7 @@ namespace SpyCore.Views
                     else
                     {   NoCount++;  }
                 }
-                if (19 > YesCount > 0)
+                if ((19 > YesCount) && (YesCount > 0))
                 {   metroLabel3.Content = "Potential Virus Found!"; }
                 else if (YesCount > 19)
                 {   metroLabel3.Content = "Virus Found!"; }

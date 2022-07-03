@@ -205,7 +205,7 @@ namespace SpyCore.Views
         private async Task<FileReport> ScanFileAsync(string path)
         {
             FileInfo info = new FileInfo(path);
-            VirusTotal vt = new VirusTotal("571adb9ec9c3d0614f1cf16ef8da0429b901eca6aeed8c84653b0e7f6ddf5da4");
+            VirusTotal vt = new VirusTotal(Properties.Settings.Default.VTAKey);
             vt.UseTLS = true;
             FileReport fileReport = await vt.GetFileReportAsync(info);
             bool hasFileBeenScannedBefore = fileReport.ResponseCode == FileReportResponseCode.Present;

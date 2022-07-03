@@ -37,9 +37,6 @@ namespace SpyCore.Views
             public string Threat { get; set; }
             // public string Threat { get; set; }
         }
-        public class tMap
-        { 
-        }
         public IList<sResults> AvCollected { get; set; }
         public Timer ScanTimer { get => scanTimer; set => scanTimer = value; }
 
@@ -50,7 +47,7 @@ namespace SpyCore.Views
         }
         private static string _path;
 
-        #region Scan Logic
+#region Scan Logic
         private async void DoLogicString(string text)
         {
             //resultView.Items.Clear();
@@ -151,7 +148,6 @@ namespace SpyCore.Views
                 foreach (KeyValuePair<string, bool> pair in structure.ScanResults)
                 {
                     o = o + 1;
-                    //string threats = structure.VirNames[i];
                     RES.Add(new sResults()
                     {
                         item = i++,
@@ -159,9 +155,7 @@ namespace SpyCore.Views
                         Detected__as__Virus = pair.Value ? "Yes" : "No",
                         Date__Of__First__Scan = structure.ScanDate.ToString(),
                         Threat = structure.VirNames[o]
-                        //Threat = _vName[i]
                     });
-//                    o = o++;
                     i = i++;
                     //Threat = vName
                 }
@@ -171,27 +165,25 @@ namespace SpyCore.Views
                 foreach (bool vir in structure.ScanResults.Values)
                 {
                     if (vir)
-                    {
-                        YesCount++;
-                    }
+                    {   YesCount++; }
                     else
-                    {
-                        NoCount++;
-                    }
+                    {   NoCount++;  }
                 }
-                if (YesCount > NoCount)
-                {
-                    metroLabel3.Content = "Virus Found!";
-                }
+                if (19 > YesCount > 0)
+                {   metroLabel3.Content = "Potential Virus Found!"; }
+                else if (YesCount > 19)
+                {   metroLabel3.Content = "Virus Found!"; }
+                else if (YesCount == 0)
+                {   metroLabel3.Content = "File is Clean!"; }
             }
 
         }
 
         private async Task<FileReport> ScanBytesAsync(byte[] bytes)
         {
-            #region APIKEY
+#region APIKEY
             VirusTotal virusTotal = new VirusTotal(Properties.Settings.Default.VTAKey);
-            #endregion
+#endregion
             virusTotal.UseTLS = true;
             FileReport report = await virusTotal.GetFileReportAsync(bytes);
             bool hasFileBeenScannedBefore = report.ResponseCode == FileReportResponseCode.Present;
@@ -248,7 +240,7 @@ namespace SpyCore.Views
             }
 
         }
-        #endregion
+#endregion
 
         private void button2_Click_1(object sender, System.Windows.RoutedEventArgs e)
         {

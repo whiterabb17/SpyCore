@@ -8,3 +8,13 @@ E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.c
 E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.dll
 E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.pdb
 E:\DarkOracle\CWC\DeepSpy\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.csproj.AssemblyReference.cache
+D:\Repos\SpyCore\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.deps.json
+D:\Repos\SpyCore\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.dll
+D:\Repos\SpyCore\SpyCore.Core\bin\Release\netstandard2.0\SpyCore.Core.pdb
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.csproj.AssemblyReference.cache
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.AssemblyInfoInputs.cache
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.AssemblyInfo.cs
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.csproj.CoreCompileInputs.cache
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.dll
+D:\Repos\SpyCore\SpyCore.Core\obj\Release\netstandard2.0\SpyCore.Core.pdb

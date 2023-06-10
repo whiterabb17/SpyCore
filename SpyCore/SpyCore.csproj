@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>SpyCore</RootNamespace>
     <UseWPF>true</UseWPF>
     <StartupObject>SpyCore.App</StartupObject>
@@ -33,7 +33,6 @@
     <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.16" />
     <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.2" />
-    <PackageReference Include="telerik.ui.for.wpf.netcore.xaml" Version="2021.2.511" />
     <PackageReference Include="VirusTotalNet" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>

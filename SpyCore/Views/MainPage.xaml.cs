@@ -9,8 +9,6 @@ using SpyCore.ViewModels;
 using VirusTotalNet.Results;
 using VirusTotalNet;
 using System.Collections.ObjectModel;
-using SpyCore.Models;
-using ControlzEx.Standard;
 using VirusTotalNet.ResponseCodes;
 using System.Windows.Forms;
 using System.Net;
@@ -144,7 +142,7 @@ namespace SpyCore.Views
                 int i = 0;
                 int o = -1;
                 List<sResults> RES = new List<sResults>();
-                List<tMap> RES2 = new List<tMap>();
+               // List<tMap> RES2 = new List<tMap>();
                 foreach (KeyValuePair<string, bool> pair in structure.ScanResults)
                 {
                     o = o + 1;

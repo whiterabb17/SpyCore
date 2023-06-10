@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\DarkOracle\CWC\DeepSpy\SpyCore\SpyCore\obj\Debug\net5.0-windows\
+D:\Repos\SpyCore\SpyCore\obj\Debug\net5.0-windows\
 SpyCore
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-E:\DarkOracle\CWC\DeepSpy\SpyCore\SpyCore\App.xaml
+D:\Repos\SpyCore\SpyCore\App.xaml
 102106673791
 
 36-1530761981
-3161441318096
+238-1602329476
 Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\Themes\HC.Dark.Blue.xaml;Styles\Themes\HC.Light.Blue.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\MainPage.xaml;Views\Page1.xaml;Views\SettingsPage.xaml;Views\ShellWindow.xaml;
 
-False
+True
 

@@ -8,7 +8,12 @@
     ".NETCoreApp,Version=v5.0": {
       "SpyCore/1.0.0": {
         "dependencies": {
+          "LiveCharts.NetCore": "0.9.7",
+          "LiveCharts.WinForms.NetCore3": "0.9.7",
+          "LiveCharts.Wpf.Core": "0.9.8",
+          "LiveCharts.Wpf.NetCore3": "0.9.7",
           "MahApps.Metro": "2.4.6",
+          "Maikebing.System.Windows.Forms.DataVisualization": "5.0.1",
           "Microsoft.Extensions.Hosting": "3.1.16",
           "Microsoft.Toolkit.Mvvm": "7.0.2",
           "SpyCore.Core": "1.0.0",
@@ -30,6 +35,40 @@
           }
         }
       },
+      "LiveCharts.Core/0.9.8": {
+        "runtime": {
+          "lib/netstandard2.0/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.NetCore/0.9.7": {},
+      "LiveCharts.WinForms.NetCore3/0.9.7": {
+        "dependencies": {
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/LiveCharts.WinForms.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          },
+          "lib/netcoreapp3.1/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.Wpf.Core/0.9.8": {
+        "dependencies": {
+          "LiveCharts.Core": "0.9.8"
+        }
+      },
+      "LiveCharts.Wpf.NetCore3/0.9.7": {
+        "dependencies": {
+          "System.Data.DataSetExtensions": "4.5.0"
+        }
+      },
       "MahApps.Metro/2.4.6": {
         "dependencies": {
           "ControlzEx": "4.4.0"
@@ -43,6 +82,19 @@
         "resources": {
           "lib/netcoreapp3.1/de/MahApps.Metro.resources.dll": {
             "locale": "de"
+          }
+        }
+      },
+      "Maikebing.System.Windows.Forms.DataVisualization/5.0.1": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0",
+          "System.Drawing.Primitives": "4.3.0",
+          "System.Windows.Extensions": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.1.0"
           }
         }
       },
@@ -337,7 +389,8 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Toolkit.Mvvm/7.0.2": {
         "runtime": {
           "lib/net5.0/Microsoft.Toolkit.Mvvm.dll": {
@@ -350,6 +403,11 @@
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "Microsoft.Win32.SystemEvents/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
@@ -368,21 +426,51 @@
           }
         }
       },
+      "System.Data.DataSetExtensions/4.5.0": {},
       "System.Diagnostics.EventLog/4.7.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.NETCore.Platforms": "5.0.0",
           "Microsoft.Win32.Registry": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
+      "System.Drawing.Common/5.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        }
+      },
+      "System.Drawing.Primitives/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "System.Runtime.Extensions/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.NETCore.Platforms": "5.0.0",
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
       "System.Text.Json/4.7.2": {},
+      "System.Windows.Extensions/5.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0"
+        }
+      },
       "VirusTotalNet/2.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -417,12 +505,54 @@
       "path": "controlzex/4.4.0",
       "hashPath": "controlzex.4.4.0.nupkg.sha512"
     },
+    "LiveCharts.Core/0.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-USb2TBOeER19X0ar5Zgki1ezjrSXBOmUoz3IqzTeksDm6hoaLFqs3iW9+wjHFuWNQGy9lLcVh2YIhhxVIg+zNQ==",
+      "path": "livecharts.core/0.9.8",
+      "hashPath": "livecharts.core.0.9.8.nupkg.sha512"
+    },
+    "LiveCharts.NetCore/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vRLJNyQAhYxw8TvGL9tY3Xskhi3JqhC74mWN+KWLheDCqsHpg8CwicLUvz/7MjWhNPcQ3HL1DmiPfnf8QkaAwg==",
+      "path": "livecharts.netcore/0.9.7",
+      "hashPath": "livecharts.netcore.0.9.7.nupkg.sha512"
+    },
+    "LiveCharts.WinForms.NetCore3/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mxJ5hL42y8PUkGIluxcN359mPMXVUTnsjtPOHdv2a3Eue6bYZvDcSH70BzjcTDTQ1sHMgnTwZIkdZ8CPSBkniQ==",
+      "path": "livecharts.winforms.netcore3/0.9.7",
+      "hashPath": "livecharts.winforms.netcore3.0.9.7.nupkg.sha512"
+    },
+    "LiveCharts.Wpf.Core/0.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jMBdknuG3EOMKA0NaqqwMjhsZpRAzd0UqP0SlwXIBJ+ZoJg5TF9C4rDdKqInEs+RycYmIwmrZWvmfDxsM5MMJw==",
+      "path": "livecharts.wpf.core/0.9.8",
+      "hashPath": "livecharts.wpf.core.0.9.8.nupkg.sha512"
+    },
+    "LiveCharts.Wpf.NetCore3/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d0HkmjLi+HifeXyD+E14aOMPDRmwkkiqPYW4GDbUS8Z1m6eQPGCShcDcbWwP4tBoWzGEkkSsy+XSHvaoW50b0Q==",
+      "path": "livecharts.wpf.netcore3/0.9.7",
+      "hashPath": "livecharts.wpf.netcore3.0.9.7.nupkg.sha512"
+    },
     "MahApps.Metro/2.4.6": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-4bmwsTtdATI3kkj4vnJ2fC+GNeAgSvaxS9JvbgyX9xb03qBI7+8nOltFumbHsc1rrmTYBSmHviqssmw2HrfvPw==",
       "path": "mahapps.metro/2.4.6",
       "hashPath": "mahapps.metro.2.4.6.nupkg.sha512"
+    },
+    "Maikebing.System.Windows.Forms.DataVisualization/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IyTZfA2OJ62esL4vwXmV6qjkJMGcflydDeIhNG72Tdyyo14X9pgZOaxVakU2vEBDcQcmc6jTnw8wuQ/9MmBHZw==",
+      "path": "maikebing.system.windows.forms.datavisualization/5.0.1",
+      "hashPath": "maikebing.system.windows.forms.datavisualization.5.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/3.1.16": {
       "type": "package",
@@ -599,12 +729,19 @@
       "path": "microsoft.extensions.primitives/3.1.16",
       "hashPath": "microsoft.extensions.primitives.3.1.16.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/3.1.0": {
+    "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
-      "path": "microsoft.netcore.platforms/3.1.0",
-      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
     "Microsoft.Toolkit.Mvvm/7.0.2": {
       "type": "package",
@@ -620,6 +757,13 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
       "type": "package",
       "serviceable": true,
@@ -634,12 +778,47 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "path": "system.data.datasetextensions/4.5.0",
+      "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
+    },
     "System.Diagnostics.EventLog/4.7.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-iDoKGQcRwX0qwY+eAEkaJGae0d/lHlxtslO+t8pJWAUxlvY3tqLtVOPnW2UU4cFjP0Y/L1QBqhkZfSyGqVMR2w==",
       "path": "system.diagnostics.eventlog/4.7.0",
       "hashPath": "system.diagnostics.eventlog.4.7.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
+      "path": "system.drawing.common/5.0.0",
+      "hashPath": "system.drawing.common.5.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1QU/c35gwdhvj77fkScXQQbjiVAqIL3fEYn/19NE0CV/ic5TN5PyWAft8HsrbRd4SBLEoErNCkWSzMDc0MmbRw==",
+      "path": "system.drawing.primitives/4.3.0",
+      "hashPath": "system.drawing.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Extensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
+      "path": "system.runtime.extensions/4.3.0",
+      "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",
@@ -661,6 +840,13 @@
       "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+    },
+    "System.Windows.Extensions/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
+      "path": "system.windows.extensions/5.0.0",
+      "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "VirusTotalNet/2.0.0": {
       "type": "package",

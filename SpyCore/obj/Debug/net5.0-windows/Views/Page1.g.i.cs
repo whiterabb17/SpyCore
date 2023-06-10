@@ -35,65 +35,6 @@ using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
-using Telerik.Charting;
-using Telerik.Windows.Cloud.Controls;
-using Telerik.Windows.Cloud.Controls.Upload;
-using Telerik.Windows.Controls;
-using Telerik.Windows.Controls.Animation;
-using Telerik.Windows.Controls.Behaviors;
-using Telerik.Windows.Controls.BulletGraph;
-using Telerik.Windows.Controls.Carousel;
-using Telerik.Windows.Controls.ChartView;
-using Telerik.Windows.Controls.Charting;
-using Telerik.Windows.Controls.Data.CardView;
-using Telerik.Windows.Controls.Data.PropertyGrid;
-using Telerik.Windows.Controls.Diagrams;
-using Telerik.Windows.Controls.Diagrams.Extensions;
-using Telerik.Windows.Controls.Diagrams.Ribbon;
-using Telerik.Windows.Controls.Docking;
-using Telerik.Windows.Controls.DragDrop;
-using Telerik.Windows.Controls.FixedDocumentViewersUI;
-using Telerik.Windows.Controls.GanttView;
-using Telerik.Windows.Controls.Gauge;
-using Telerik.Windows.Controls.GridView;
-using Telerik.Windows.Controls.HeatMap;
-using Telerik.Windows.Controls.LayoutControl;
-using Telerik.Windows.Controls.Legend;
-using Telerik.Windows.Controls.Map;
-using Telerik.Windows.Controls.MultiColumnComboBox;
-using Telerik.Windows.Controls.Primitives;
-using Telerik.Windows.Controls.RadialMenu;
-using Telerik.Windows.Controls.RibbonView;
-using Telerik.Windows.Controls.RichTextBoxUI;
-using Telerik.Windows.Controls.RichTextBoxUI.ColorPickers;
-using Telerik.Windows.Controls.RichTextBoxUI.TableControls;
-using Telerik.Windows.Controls.ScheduleView;
-using Telerik.Windows.Controls.Scheduling;
-using Telerik.Windows.Controls.Sparklines;
-using Telerik.Windows.Controls.TimeBar;
-using Telerik.Windows.Controls.Timeline;
-using Telerik.Windows.Controls.TransitionEffects;
-using Telerik.Windows.Controls.TreeListView;
-using Telerik.Windows.Controls.TreeMap;
-using Telerik.Windows.Controls.TreeView;
-using Telerik.Windows.Controls.Wizard;
-using Telerik.Windows.Data;
-using Telerik.Windows.Documents.FormatProviders.Html;
-using Telerik.Windows.Documents.FormatProviders.OpenXml.Docx;
-using Telerik.Windows.Documents.FormatProviders.Rtf;
-using Telerik.Windows.Documents.FormatProviders.Txt;
-using Telerik.Windows.Documents.FormatProviders.Xaml;
-using Telerik.Windows.Documents.Model;
-using Telerik.Windows.Documents.UI;
-using Telerik.Windows.DragDrop;
-using Telerik.Windows.DragDrop.Behaviors;
-using Telerik.Windows.Input.Touch;
-using Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;
-using Telerik.Windows.Media.Imaging.Tools.UI;
-using Telerik.Windows.Persistence;
-using Telerik.Windows.Persistence.SerializationMetadata;
-using Telerik.Windows.Rendering;
-using Telerik.Windows.Shapes;
 
 
 namespace SpyCore.Views {
@@ -214,7 +155,7 @@ namespace SpyCore.Views {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.5.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -230,7 +171,7 @@ namespace SpyCore.Views {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.4.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.5.0")]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
